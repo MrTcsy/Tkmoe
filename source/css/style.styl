@@ -1,0 +1,84 @@
+/*公共区域*/
+html,body {
+	margin: 0;
+}
+.header-info,.post,.yiyan{
+	border-radius: 5px;
+  box-shadow: 1px 2px 3px #ddd;
+}
+body {
+  font-family: "Times New Roman","Microsoft Jhenghei","Microsoft YaHei",serif;
+  font-size: 16px;
+  line-height: 200%;
+  color: #666;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration:none;
+  color: #666;
+}
+
+
+/**主体**/
+.ibody{
+	position: relative;
+  height:100%;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  clear:both;
+  padding: 20px;
+}
+
+.main {
+	float:right;
+	display: inline;
+    float: left;
+    width: 73.33333333333333%;
+    margin: 0 .833333333333333%;
+}
+
+.highlight,.plain{
+    border-left: 5px solid #e6e2e2d1;
+    background: #ffffff73;
+    margin: auto;
+    overflow: auto;
+    line-height: 19.4px;
+}
+
+
+/**雷姆**/
+.sidebar_wo{position:fixed;line-height:0;bottom:0;z-index:1000;}
+#leimu{left:0;-webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translate(-7px,7px);
+  -ms-transform: translate(-7px,7px);
+  transform: translate(-7px,7px);}
+#lamu{-webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translate(7px,7px);
+  -ms-transform: translate(7px,7px);
+  transform: translate(7px,7px);right:0}
+#leimu:hover{
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  transform: translate(0,0);
+}
+#lamu:hover {
+  -webkit-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  transform: translate(0,0);
+}
+@media only screen and (max-width:1024px){.sidebar_wo{display:none}}
+
+@import "_partial/head";
+@import "_partial/header";
+@import "_partial/post";
+@import "_partial/archive";
+@import "_partial/footer";
+@import "_post/my_post_copyright";
+@import "live2";

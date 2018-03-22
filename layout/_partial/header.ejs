@@ -1,0 +1,36 @@
+<header class="header">
+<div class="header-info">
+  <div class="card-bg">
+    <img src="<%= theme.infobg %>" />
+    </div>
+    <div class="card-info" style="position: relative;min-height: 100px;text-align: center;">
+    <a href="/"><img class="card-info-avatar" src="<%= theme.avatar %>" /></a>
+    <span class="card-info-block card-info-name">@<%= config.author %></span>
+    <span class="card-info-block">欢迎来到我的博客！</span>
+    <span class="card-info-block">其他相关信息</span>
+    </div>
+    <div class="catch-me">
+        <a data-balloon="Rss" data-balloon-pos="up" target="_blank" href="<%= theme.rss %>"><i class="fa fa-rss"></i></a>
+        <a data-balloon="微博" data-balloon-pos="up" target="_blank" href="<%= theme.weibo %>" class="external" rel="nofollow"><i class="fa fa-weibo"></i></a>
+        <a data-balloon="GitHub" data-balloon-pos="up" target="_blank" href="<%= theme.github %>" class="external" rel="nofollow"><i class="fa fa-github"></i></a>
+        <a data-balloon="Email" data-balloon-pos="up" target="_blank" href="mailto:<%= theme.Email %>" class="external" rel="nofollow"><i class="fa fa-envelope"></i></a>
+        </div>
+</div>
+
+<% if (theme.yiyan){ %>
+  <div class="yiyan">
+  <p class="siyueapi" style="padding:10px;"><script>siyueapi()</script></p>
+  </div>
+  <% } %>
+
+
+<div class="header-link">
+      <h2><%= theme.link_title %></h2>
+      <% for (let item in theme.links){ %>
+        <a href="<%= theme.links[item] %>" target="_blank" title="<%= item %>">
+          <%= item %>
+        </a>
+      <% } %>
+</div>
+  
+</header>

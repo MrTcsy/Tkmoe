@@ -1,0 +1,16 @@
+<% if (theme.pjax){ %>
+<script src="//cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.js"></script>
+$(document).pjax('a[target!=_blank]', '.ibody', {fragment:'.ibody', timeout:8000});
+//$(document).on('pjax:send', function() { //pjax链接点击后显示加载动画；$(".pjax_loading").css("display", "block");});
+$(document).on('pjax:complete', function() { // pjax 重载
+    siyueapi(); //siyueapi重载
+});
+<% } %>
+<%- js('js/tcsy.js') %>
+<div class="scroll-bar"></div>
+<footer class="footer">
+	<div class="footer-info">
+	<p>©2018 mr.tcsy</p>
+	<p>由Hexo强力驱动 | 主题-Tkmoe 1.0</p>
+		</div>
+</footer>

@@ -1,0 +1,143 @@
+.header {
+  display: inline;
+  float:left;
+  width: 23.333333333333332%;
+  margin: 0 .833333333333333%;
+
+}
+
+.header-info{
+  background-color: rgba(255,255,255,0.8);
+}
+
+.header-info .card-bg img {
+  width: 100%;
+  height: auto;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.header-info>.catch-me{
+  text-align: center;
+  padding-bottom:10px;
+}
+
+.header-link{
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px #ddd;
+  background-color: rgba(255,255,255,0.8);
+}
+.header-link>a{
+  padding: 10px;
+}
+.card-info-avatar {
+  display: block;
+  margin: 0 auto;
+  padding: $site-author-image-padding;
+  max-width: $site-author-image-width;
+  height: $site-author-image-height;
+  border: $site-author-image-border-width solid $site-author-image-border-color;
+
+  /* 头像圆形 */
+  border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  box-shadow: inset 0 -1px 0 #333sf;
+
+  /* 设置循环动画 [animation: (play)动画名称 (2s)动画播放时长单位秒或微秒 (ase-out)动画播放的速度曲线为以低速结束 
+    (1s)等待1秒然后开始动画 (1)动画播放次数(infinite为循环播放) ]*/
+ 
+
+  /* 鼠标经过头像旋转360度 */
+  -webkit-transition: -webkit-transform 1.0s ease-out;
+  -moz-transition: -moz-transform 1.0s ease-out;
+  transition: transform 1.0s ease-out;
+}
+
+.card-info-avatar:hover {
+  /* 鼠标经过停止头像旋转 
+  -webkit-animation-play-state:paused;
+  animation-play-state:paused;*/
+
+  /* 鼠标经过头像旋转360度 */
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+
+/* Z 轴旋转动画 */
+@-webkit-keyframes play {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+  }
+}
+@-moz-keyframes play {
+  0% {
+    -moz-transform: rotateZ(0deg);
+  }
+  100% {
+    -moz-transform: rotateZ(-360deg);
+  }
+}
+@keyframes play {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+
+.catch-me>a>i{
+      display: inline-block;
+    font-size: 1.25rem;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 30px;
+    color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .1);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-style: normal;
+}
+
+.header-info .card-info-avatar {
+  position: relative;
+  width: 100px;
+  max-width: 100%;
+  border-radius: 50%;
+  border: 2px solid #e4dede;
+  display: block;
+  margin: 0 auto;
+  -webkit-box-shadow:1px 1px 1px rgba(0, 0, 0, 0.3), 2px 2px 3px rgba(0, 0, 0,0.2), 3px 3px 6px rgba(0, 0, 0,0.2);
+  box-shadow:1px 1px 1px rgba(0, 0, 0, 0.3), 2px 2px 3px rgba(0, 0, 0,0.2), 3px 3px 6px rgba(0, 0, 0,0.2);
+  margin-top: -50px;
+}
+
+.header-info .card-info-avatar:hover {
+  -webkit-animation: profilepic 0.15s linear infinite alternate;
+  -moz-animation: profilepic 0.15s linear infinite alternate;
+  -ms-animation: profilepic 0.15s linear infinite alternate;
+  animation: profilepic 0.15s linear infinite alternate;
+}
+
+.header-info .card-info-block {
+  display: block;
+  text-align: center;
+} 
+
+.header-info .card-info-name {
+  font-family: Comic Sans MS, PingFang SC, Helvetica, Avenir Next, Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+}
+
+
+
+.yiyan{
+  background-color: rgba(255,255,255,0.8);
+}

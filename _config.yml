@@ -1,0 +1,59 @@
+#=====================================================================
+#=========================Tkmoe=======================================
+#=====================================================================
+#==================https://github.com/MrTcsy/Tkmoe====================
+#=====================================================================
+#=======================Version:1.0===================================
+
+#=====================================================================
+#####################主题配置#########################################
+#=====================================================================
+
+
+# menu
+menu:
+  Home: /
+  Archives: /archives
+  Tools: /Tools
+
+#会变化的背景，无法和pjax同时启用
+backstretch:
+  url1: /images/bg/1.jpg
+  url2: /images/bg/2.jpg
+  url3: /images/bg/3.jpg
+  url4: /images/bg/4.jpg
+
+#一言 四月是你的谎言
+yiyan: true
+
+# pjax 无法和会变化的背景同时启用
+pjax:
+
+#anatar 首页头像
+avatar: /images/avatar.jpg
+
+#infobg 首页头像后背景
+infobg: /images/infobg.jpg
+
+# github 微博 rss地址 Email
+github: https://github.com/mrtcsy/
+rss: # rss url
+weibo: #weibo
+Email: mrtcsy@live.com
+
+# 友情链接
+# name : url
+link_title: #友情链接 标题
+links:
+  Mr.Tcsy's blog : https://secsb.com
+  小姐姐 : https://xiaoduwu.github.io
+
+#拉姆雷姆拉拉
+lamu1: /images/lamu_1.png
+lamu2: /images/lamu_2.png
+leimu1: /images/leimu_1.png
+leimu2: /images/leimu_2.png
+
+#CC 版权信息
+post_copyright: true
+
