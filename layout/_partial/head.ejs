@@ -4,31 +4,17 @@
   <title><%= config.title %></title>
   <%- css('css/style.css') %>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
+  <%- js('js/jquery.js') %>
 
-  <% if (theme.yiyan){ %>
-  <script type="text/javascript" src="https://tools.secsb.com/ao.php?encode=js&charset=utf-8"></script>
-  <% } %>
-
-  <% if (theme.backstretch){ %>
-  <script type="text/javascript" src="//cdn.bootcss.com/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-  <script>
-  $(function () {
-            $(".headrang");   //设置透明度
-            $.backstretch([
-                  "<%= theme.backstretch.url1%>",
-                  "<%= theme.backstretch.url2%>"
-            ], { duration: 3000, fade: 750 });
-        });
-  </script>
-  <% } %>
+  <%- partial('_moe/yiyan') %>
+  <%- partial('_moe/backstretch') %>
 
 </head>
+
 <header>
   <div class="head-bg">
     <img class="headrang">
   </div>
-
   <nav class="navbar">
     <ul class="menu">
       <% for (name in theme.menu) { %>
@@ -38,40 +24,4 @@
       <% } %>
     </ul>
   </nav>
-
 </header>
-
-
-<div id="landlord" style="left:5px;bottom:0px;">
-    <div class="message" style="opacity:0"></div>
-    <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
-    <div class="live_talk_input_body">
-      <div class="live_talk_input_name_body">
-          <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off" placeholder="你的名字" />
-        </div>
-        <div class="live_talk_input_text_body">
-          <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off" placeholder="要和我聊什么呀？"/>
-            <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
-        </div>
-    </div>
-    <input name="live_talk" id="live_talk" value="1" type="hidden" />
-    <div class="live_ico_box">
-      <div class="live_ico_item type_info" id="showInfoBtn"></div>
-      <div class="live_ico_item type_talk" id="showTalkBtn"></div>
-        <div class="live_ico_item type_quit" id="hideButton"></div>
-        <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
-    </div>
-</div>
-<div id="open_live2d">召唤伊斯特瓦尔</div>
-<script>
-var message_Path = 'live2d/';//资源目录，如果目录不对请更改
-var talkAPI = "";//如果有类似图灵机器人的聊天接口请填写接口路径
-</script>
-
-
-<%- js('live2d/js/live2d.js') %>
-<%- js('live2d/js/message.js') %>
-
-
-
-

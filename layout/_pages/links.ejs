@@ -1,0 +1,21 @@
+<article class="post">
+    <div class="post-links">
+        <ul class="link-list">
+        <% if (site.data.links) { %>
+            <% for (var i in site.data.links) { %>
+                <li class="link-item">
+                <a href="<%= site.data.links[i].link %>" title="<%= i %>" target="_blank">
+                    <img src="<%= site.data.links[i].avatar %>" >
+                    <h4 class="tile-title"><%= i %></h4>
+                    <p class="tile-subtitle"><small><%- truncate(site.data.links[i].descr, 36) %></small></p>
+                </a>
+                </li>
+            <% } %>
+        <% } %>
+    </ul>
+    </div>
+</article>
+
+
+
+

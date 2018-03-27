@@ -1,4 +1,3 @@
-<!-开始-->
 <div id="updown"> 
 <div class="sidebar_wo" id="leimu">
 <img src="<%= url_for(theme.leimu1)%>" alt="雷姆" onmouseover="this.src='<%= url_for(theme.leimu2)%>'" onmouseout="this.src='<%= url_for(theme.leimu1)%>'" id="audioBtn">
@@ -11,6 +10,4 @@
         $("#updown > #lamu img").eq(0).click(function(){$("html,body").animate({scrollTop :0}, 800);return false;});
         $("#updown > #leimu img").eq(0).click(function(){$("html,body").animate({scrollTop : $(document).height()}, 800);return false;});
       });
-
 </script>
-<!-结束-->

@@ -1,0 +1,6 @@
+  <% if (theme.backstretch){ %>
+  <%- js('js/jquery.backstretch.min.js') %>
+  <script>
+  $(function () {$(".headrang");$.backstretch(["<%= theme.backstretch.url1%>","<%= theme.backstretch.url2%>"], { duration: 3000, fade: 750 });});
+  </script>
+  <% } %>
