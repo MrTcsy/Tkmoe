@@ -4,6 +4,6 @@
 
 
 ### 20180327
-1、加入漫月api背景图，项目地址 https://ikmoe.com/8391.html
-2、加入live2d伊斯特瓦尔，项目地址 https://www.wikimoe.com/?post=76
-3、加入雷姆拉姆，项目地址 https://qqdie.com
+1. 加入漫月api背景图，项目地址 https://ikmoe.com/8391.html
+2. 加入live2d伊斯特瓦尔，项目地址 https://www.wikimoe.com/?post=76
+3. 加入雷姆拉姆，项目地址 https://qqdie.com
